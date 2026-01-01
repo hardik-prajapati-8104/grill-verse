@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+  <style>
+    body {
+      background: #ffffff;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .login-card {
+      width: 100%;
+      max-width: 420px;
+      padding: 25px;
+    }
+
+    .form-control {
+      height: 52px;
+      border-radius: 14px;
+      padding-left: 45px;
+    }
+
+    .input-icon {
+      position: absolute;
+      top: 50%;
+      left: 15px;
+      transform: translateY(-50%);
+      color: #999;
+    }
+
+    .btn-orange {
+      background-color: #f7941d;
+      border: none;
+      color: #fff;
+      height: 52px;
+      border-radius: 14px;
+      font-weight: 600;
+    }
+
+    .btn-orange:hover {
+      background-color: #e7830f;
+    }
+
+    .social-btn {
+      height: 52px;
+      border-radius: 14px;
+      border: 1px solid #eee;
+      background: #f9f9f9;
+      font-weight: 500;
+    }
+
+    .link-orange {
+      color: #f7941d;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .divider {
+      display: flex;
+      align-items: center;
+      text-align: center;
+      color: #aaa;
+      margin: 25px 0;
+    }
+
+    .divider::before,
+    .divider::after {
+      content: '';
+      flex: 1;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .divider:not(:empty)::before {
+      margin-right: .75em;
+    }
+
+    .divider:not(:empty)::after {
+      margin-left: .75em;
+    }
+  </style>
+</head>
+<body>
+
+<div class="login-card">
+  <div class="text-center mb-4">
+    <h3 class="fw-bold">Hello!</h3>
+    <p class="text-muted">We are happy to have you here!</p>
+  </div>
+
+  <!-- Email -->
+  <div class="position-relative mb-3">
+    <i class="bi bi-envelope input-icon"></i>
+    <input type="email" class="form-control" placeholder="Email Address">
+  </div>
+
+  <!-- Password -->
+  <div class="position-relative mb-3">
+    <i class="bi bi-lock input-icon"></i>
+    <input type="password" class="form-control" placeholder="Password">
+  </div>
+
+  <!-- Remember + Forgot -->
+  <div class="d-flex justify-content-between align-items-center mb-4">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="remember">
+      <label class="form-check-label" for="remember">Remember Me</label>
+    </div>
+    <a href="#" class="link-orange">Forgot password?</a>
+  </div>
+
+  <!-- Sign In -->
+  <button class="btn btn-orange w-100 mb-3">Sign In</button>
+
+  <!-- Sign up -->
+  <p class="text-center text-muted">
+    Don't have an account?
+    <a href="#" class="link-orange">Sign Up</a>
+  </p>
+
+  <p class="text-center link-orange fw-semibold">
+    Register as a Provider or a Crew Member
+  </p>
+
+  <!-- Divider -->
+  <div class="divider">Or Continue With</div>
+
+  <!-- Google -->
+  <button class="social-btn w-100 mb-3">
+    <i class="bi bi-google me-2"></i> Sign In With Google
+  </button>
+
+  <!-- OTP -->
+  <button class="social-btn w-100">
+    <i class="bi bi-telephone me-2"></i> Sign In With OTP
+  </button>
+</div>
+
+</body>
+</html>
