@@ -1,210 +1,246 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mobile App Layout</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <!-- Swiper CSS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-</head>
-<body>
-  <section class="hero">
-  <div class="swiper heroSwiper">
-    <div class="swiper-wrapper">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mobile App Layout</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <section class="hero">
+      <div class="swiper heroSwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img
+              src="asset\work\banner3.avif"
+              alt="Banner 1" style="object-fit: fill;"
+            />
+          </div>
 
-      <div class="swiper-slide">
-        <img src="asset\image\veitname-industrial.png" alt="Banner 1">
+          <div class="swiper-slide">
+            <img
+              src="asset\work\banner2.avif"
+            />
+          </div>
+
+          <div class="swiper-slide">
+            <img
+              src="asset\work\banner1.avif"
+              alt="Banner 1"
+            />
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
       </div>
 
-      <div class="swiper-slide">
-        <img src="https://images.unsplash.com/photo-1545048702-79362596cdc9">
+      <!-- SEARCH BAR (OVER IMAGE) -->
+      <div class="search-box">
+        <i class="bi bi-geo-alt"></i>
+        <input type="text" placeholder="Address for the Service" />
+        <i class="bi bi-crosshair"></i>
+        <i class="bi bi-search"></i>
+      </div>
+    </section>
+
+    <section class="services">
+      <div class="services-header">
+        <h3>All Services</h3>
+        <a href="#">View All</a>
       </div>
 
-       <div class="swiper-slide">
-        <img src="asset\image\veitname-industrial.png" alt="Banner 1">
+      <div class="service-grid">
+        <!-- Card -->
+        <div class="service-card">
+          <div class="card-image">
+            <img
+              src="asset\work\image1.jpg"
+              alt="Service Image"
+            />
+
+            <span class="badge">SOINS DES CHEVEUX</span>
+            <button class="quote-btn">Free Quote</button>
+          </div>
+
+          <div class="card-content">
+            <div class="rating">★★★★★</div>
+            <h4>Manucure, soin des mains</h4>
+            <p>Duration (30 min)</p>
+          </div>
+        </div>
+
+        <!-- Card -->
+        <div class="service-card">
+          <div class="card-image">
+            <img
+              src="asset\work\image3.jpg"
+              alt="Home Maintenance"
+            />
+
+            <span class="badge">MAINTENANCE RÉSIDENCE</span>
+            <button class="quote-btn">Free Quote</button>
+          </div>
+
+          <div class="card-content">
+            <div class="rating">★★★★☆</div>
+            <h4>Home Maintenance</h4>
+            <p>Duration (1 hr)</p>
+          </div>
+        </div>
+
+        <!-- Card -->
+        <div class="service-card">
+          <div class="card-image">
+            <img
+              src="asset\work\image4.jpg"
+              alt="Beauty & Spa"
+            />
+
+            <span class="badge">BEAUTY</span>
+            <button class="quote-btn">Free Quote</button>
+          </div>
+
+          <div class="card-content">
+            <div class="rating">★★★★★</div>
+            <h4>Beauty & Spa</h4>
+            <p>Duration (45 min)</p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="service-card">
+          <div class="card-image">
+            <img
+              src="asset\work\image2.jpg"
+              alt="Home Maintenance"
+            />
+
+            <span class="badge">MAINTENANCE RÉSIDENCE</span>
+            <button class="quote-btn">Free Quote</button>
+          </div>
+
+          <div class="card-content">
+            <div class="rating">★★★★☆</div>
+            <h4>Home Maintenance</h4>
+            <p>Duration (1 hr)</p>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="service-card">
+          <div class="card-image">
+            <img
+              src="asset\work\image3.jpg"
+              alt="Beauty & Spa"
+            />
+
+            <span class="badge">BEAUTY & SPA</span>
+            <button class="quote-btn">Free Quote</button>
+          </div>
+
+          <div class="card-content">
+            <div class="rating">★★★★★</div>
+            <h4>Beauty & Spa Treatment</h4>
+            <p>Duration (45 min)</p>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="service-card">
+          <div class="card-image">
+            <img
+              src="asset\work\image4.jpg"
+              alt="Home Cleaning Service"
+            />
+
+            <span class="badge">CLEANING</span>
+            <button class="quote-btn">Free Quote</button>
+          </div>
+
+          <div class="card-content">
+            <div class="rating">★★★★☆</div>
+            <h4>Home Cleaning Service</h4>
+            <p>Duration (2 hr)</p>
+          </div>
+        </div>
       </div>
+    </section>
 
+    <div class="container my-5">
+      <div class="custom-job-section">
+        <p class="fs-4" style="padding-bottom: 10px">
+          Couldn't find the service you were looking for?<br />
+          Don't worry, you can create a listing
+        </p>
 
+        <button class="custom-job-btn">
+          <span class="me-2 fs-4">+</span> Create a Custom Job Request
+        </button>
+      </div>
     </div>
-    <div class="swiper-pagination"></div>
-  </div>
 
-  <!-- SEARCH BAR (OVER IMAGE) -->
-  <div class="search-box">
-    <i class="bi bi-geo-alt"></i>
-    <input type="text" placeholder="Address for the Service">
-    <i class="bi bi-crosshair"></i>
-    <i class="bi bi-search"></i>
-  </div>
-</section>
+    <!-- FLOATING BUTTON -->
+    <button class="floating-btn" onclick="window.location.href='login.html'">
+      <i class="bi bi-plus"></i> New Custom Request
+    </button>
 
-<section class="services">
-  <div class="services-header">
-    <h3>All Services</h3>
-    <a href="#">View All</a>
-  </div>
+    <!-- BOTTOM NAVIGATION -->
+    <nav class="bottom-nav">
+      <a href="index.html" class="active"
+        ><i class="bi bi-house"></i><span>Home</span></a
+      >
+      <a href="login.html"
+        ><i class="bi bi-calendar"></i><span>Bookings</span></a
+      >
+      <a href="index.html"><i class="bi bi-grid"></i><span>Categories</span></a>
+      <a href="index.html"><i class="bi bi-chat"></i><span>Chat</span></a>
+      <a href="index.html"><i class="bi bi-person"></i><span>Profile</span></a>
+    </nav>
 
-  <div class="service-grid">
-
-    <!-- Card -->
-    <div class="service-card">
-
-      <div class="card-image" style="background-image:url('https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9');">
-        <span class="badge">SOINS DES CHEVEUX</span>
-        <button class="quote-btn">Free Quote</button>
-      </div>
-
-      <div class="card-content">
-        <div class="rating">★★★★★</div>
-        <h4>Manucure, soin des mains</h4>
-        <p>Duration (30 min)</p>
-      </div>
-    </div>
-
-    <!-- Card -->
-    <div class="service-card">
-      <div class="card-image" style="background-image:url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c');">
-        <span class="badge">MAINTENANCE RÉSIDENCE</span>
-        <button class="quote-btn">Free Quote</button>
-      </div>
-
-      <div class="card-content">
-        <div class="rating">★★★★☆</div>
-        <h4>Home Maintenance</h4>
-        <p>Duration (1 hr)</p>
-      </div>
-    </div>
-
-    <!-- Card -->
-    <div class="service-card">
-      <div class="card-image" style="background-image:url('https://images.unsplash.com/photo-1556228578-8c89e6adf883');">
-        <span class="badge">BEAUTY</span>
-        <button class="quote-btn">Free Quote</button>
-      </div>
-
-      <div class="card-content">
-        <div class="rating">★★★★★</div>
-        <h4>Beauty & Spa</h4>
-        <p>Duration (45 min)</p>
-      </div>
-    </div>
-
-    <!-- Card 2 -->
-<div class="service-card">
-  <div class="card-image" style="background-image:url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c');">
-    <span class="badge">MAINTENANCE RÉSIDENCE</span>
-    <button class="quote-btn">Free Quote</button>
-  </div>
-
-  <div class="card-content">
-    <div class="rating">★★★★☆</div>
-    <h4>Home Maintenance</h4>
-    <p>Duration (1 hr)</p>
-  </div>
-</div>
-
-<!-- Card 3 -->
-<div class="service-card">
-  <div class="card-image" style="background-image:url('https://images.unsplash.com/photo-1556228578-8c89e6adf883');">
-    <span class="badge">BEAUTY & SPA</span>
-    <button class="quote-btn">Free Quote</button>
-  </div>
-
-  <div class="card-content">
-    <div class="rating">★★★★★</div>
-    <h4>Beauty & Spa Treatment</h4>
-    <p>Duration (45 min)</p>
-  </div>
-</div>
-
-<!-- Card 4 -->
-<div class="service-card">
-  <div class="card-image" style="background-image:url('https://images.unsplash.com/photo-1581578731548-c64695cc6952');">
-    <span class="badge">CLEANING</span>
-    <button class="quote-btn">Free Quote</button>
-  </div>
-
-  <div class="card-content">
-    <div class="rating">★★★★☆</div>
-    <h4>Home Cleaning Service</h4>
-    <p>Duration (2 hr)</p>
-  </div>
-</div>
-
-
-  </div>
-</section>
-
-  <div class="container my-5">
-    <div class="custom-job-section">
-      <p class="fs-4 " style="padding-bottom: 10px;">
-        Couldn't find the service you were looking for?<br>
-        Don't worry, you can create a listing
-      </p>
-
-      <button class="custom-job-btn">
-        <span class="me-2 fs-4">+</span> Create a Custom Job Request
-      </button>
-    </div>
-  </div>
-
-
-<!-- FLOATING BUTTON -->
-<button class="floating-btn" onclick="window.location.href='login.html'">
-  <i class="bi bi-plus"></i> New Custom Request
-</button>
-
-
-<!-- BOTTOM NAVIGATION -->
-<nav class="bottom-nav">
-  <a href="index.html" class="active"><i class="bi bi-house"></i><span>Home</span></a>
-  <a href="login.html" ><i class="bi bi-calendar"></i><span>Bookings</span></a>
-  <a href="index.html"><i class="bi bi-grid"></i><span>Categories</span></a>
-  <a href="index.html"><i class="bi bi-chat"></i><span>Chat</span></a>
-  <a href="index.html"><i class="bi bi-person"></i><span>Profile</span></a>
-</nav>
-
-
-<!-- Swiper JS -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script>
-  new Swiper(".heroSwiper", {
-    loop: true,
-    autoplay: {
-      delay: 3500,
-      disableOnInteraction: false,
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-  });
-</script>
-
-<script>
-  const floatingBtn = document.querySelector('.floating-btn');
-  const customSection = document.querySelector('.custom-job-section');
-
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          floatingBtn.classList.add('hide'); // hide button
-        } else {
-          floatingBtn.classList.remove('hide'); // show button
-        }
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      new Swiper(".heroSwiper", {
+        loop: true,
+        autoplay: {
+          delay: 3500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
       });
-    },
-    {
-      threshold: 0.3 // adjust visibility trigger
-    }
-  );
+    </script>
 
-  observer.observe(customSection);
-</script>
+    <script>
+      const floatingBtn = document.querySelector(".floating-btn");
+      const customSection = document.querySelector(".custom-job-section");
 
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              floatingBtn.classList.add("hide"); // hide button
+            } else {
+              floatingBtn.classList.remove("hide"); // show button
+            }
+          });
+        },
+        {
+          threshold: 0.3, // adjust visibility trigger
+        }
+      );
 
-</body>
+      observer.observe(customSection);
+    </script>
+  </body>
 </html>
